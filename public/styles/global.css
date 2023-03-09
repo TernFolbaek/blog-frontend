@@ -79,9 +79,13 @@ button{
     padding: 20px;
 }
 .center{
+    padding: 20px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
 }
+
 form{
     margin-bottom: 20px;
 }

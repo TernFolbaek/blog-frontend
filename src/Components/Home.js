@@ -33,8 +33,8 @@ const Home = ({ id }) => {
       </div>
       <div id='global-posts'>
         {posts.map((post) => (
-          <$Link to={`/post/${post._id}`}>
-            <div id={post._id} className='post'>
+          <$Link to={`/post/${post._id}`} key={Math.random()}>
+            <div id={post._id} className='post' >
               <h1>{post.title}</h1>
               <hr />
               <h3>{post.text}</h3>

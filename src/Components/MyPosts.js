@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
+
 const MyPosts = ({ id }) => {
   const [user, setUser] = useState('');
   const [title, setTitle] = useState('');
@@ -33,11 +34,14 @@ const MyPosts = ({ id }) => {
       }),
     })
       .then((response) => response.json())
-      .then((data) => console.log(data))
+      .then( window.location.href = "/")
       .catch((error) => console.error(error));
   };
 
+
+
   const loadPosts = () => {
+
     if (user.length <= 0) {
       return;
     }
@@ -57,6 +61,7 @@ const MyPosts = ({ id }) => {
   };
 
   const formatDate = (date) => {
+
     return date.substring(0, 10);
   };
 
@@ -98,7 +103,7 @@ const MyPosts = ({ id }) => {
                 <h1>{post.title}</h1>
                 <hr />
                 <h3>{post.text}</h3>
-                <h4>{formatDate(post.timeStamp)}</h4>
+                <h4>{formatDate(post.timeStamp)}</h4> 
               </div>
             ))}
           </div>

@@ -49,8 +49,8 @@ const Post = () => {
 
 
   return (
-    <div>
-      <div className='center'>
+    <div className='center'>
+      <div>
         <div className='post-details'>
           <h1>{post.title}</h1>
           <h3>{post.text}</h3>
