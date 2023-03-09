@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "blog-c0b86"
-  }
+    "default": "blog-4eafd",
+    "blog": "blog-4eafd"
+  },
+  "targets": {},
+  "etags": {}
 }
